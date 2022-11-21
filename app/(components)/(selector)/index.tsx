@@ -1,5 +1,7 @@
-import { useState } from "react";
-import { selectableItem } from "../../types";
+'use client'
+
+import { cloneElement, useState } from "react";
+import { selectableItem } from "../../../types";
 import styles from "./selector.module.css";
 
 interface Props {
@@ -24,7 +26,9 @@ const Selector = (props: Props) => {
   return (
     <div className={styles.wrapper}>
       {selectableItems.map((selectableItem) => {
-        return <div key={selectableItem.id} onClick={() => handleOnClick(selectableItem)}>{selectableItem.element}</div>;
+        return <div key={selectableItem.id} onClick={() => handleOnClick(selectableItem)}>{
+         cloneElement(selectableItem.element, {selected: selectableItem.id == selectedItem?.id } )
+          }</div>;
       })}
     </div>
   );

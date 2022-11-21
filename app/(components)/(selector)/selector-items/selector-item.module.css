@@ -1,0 +1,48 @@
+.colorItem {
+    border-radius: 100%;
+    width: 30px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.colorItem:hover {
+    border: 2px rgba(255, 255, 255, .2) solid;
+}
+
+.selectedColorItem {
+    border: 2px white solid !important;
+}
+
+.sizeItem {
+    border-radius: 5px;
+    width: 50px;
+    aspect-ratio: 1/1;
+    background-color: rgb(172, 172, 172);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.selectedSizeItem {
+    color: rgb(236, 236, 236);
+    background-color: rgb(90, 90, 90);
+}
+
+.checkmark {
+    width: 60%;
+    height: 60%;
+    color: white;
+}
+
+a:hover { 
+    cursor: pointer;
+}
