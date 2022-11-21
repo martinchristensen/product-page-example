@@ -1,0 +1,6 @@
+.wrapper {
+    background-color: blueviolet;
+    display: flex;
+    gap: 1em;
+    padding: 5px 0;
+}

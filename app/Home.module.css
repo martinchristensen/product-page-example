@@ -1,0 +1,12 @@
+.twoColWrapper {
+    width: 100%;
+    display: flex;
+}
+
+.twoColWrapper section {
+    width: 50%;
+}
+
+.twoColWrapper section:nth-child(2) {
+    background-color: grey;
+}
