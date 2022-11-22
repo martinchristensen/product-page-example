@@ -1,8 +1,8 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import Selector from "../app/(components)/(selector)";
-import ColorSelectorItem from "../app/(components)/(selector)/selector-items/colorSelectorItem";
-import SizeSelectorItem from "../app/(components)/(selector)/selector-items/sizeSelectorItem";
-import { BLUE, RED } from "../utils/constants";
+import Selector from "../../app/(components)/(selector)";
+import ColorSelectorItem from "../../app/(components)/(selector)/selector-items/colorSelectorItem";
+import SizeSelectorItem from "../../app/(components)/(selector)/selector-items/sizeSelectorItem";
+import { BLUE, RED } from "../../utils/constants";
 
 export default {
   title: "Product Page/Selector/Selector",

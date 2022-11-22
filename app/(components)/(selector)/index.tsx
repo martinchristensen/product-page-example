@@ -19,7 +19,7 @@ const Selector = (props: Props) => {
         onSelect(clickedItem)
     } else {
         setSelectedItem(undefined)
-        onSelect()
+        onSelect(undefined)
     }
   }
 

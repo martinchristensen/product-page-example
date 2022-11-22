@@ -1,12 +1,35 @@
 .twoColWrapper {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
 
 .twoColWrapper section {
-    width: 50%;
+  width: 50%;
+  padding: 3em 10em;
 }
 
 .twoColWrapper section:nth-child(2) {
-    background-color: rgb(207, 207, 207);
+  background-color: rgb(235, 235, 235);
+}
+
+.detailsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.divider {
+    width: 100%;
+    background-color: rgb(78, 78, 78);
+    height: 1px;
+}
+
+h1 {
+    padding: 10px 0;
+}
+
+h2 {
+    padding: 10px 0;
 }

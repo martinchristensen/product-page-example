@@ -15,7 +15,7 @@ const SizeSelectorItem = (props: Props) => {
   const { size, value, selected = false } = props;
   return (
     <>
-      <a data-tip data-for={"SizeSelectorItem-" + size}>
+      <a>
         <div
           className={`${styles.sizeItem} ${
             selected ? styles.selectedSizeItem : ""
@@ -24,7 +24,6 @@ const SizeSelectorItem = (props: Props) => {
             {value}
         </div>
       </a>
-      <ReactTooltip id={"SizeSelectorItem-" + size}>{value}</ReactTooltip>
     </>
   );
 };
