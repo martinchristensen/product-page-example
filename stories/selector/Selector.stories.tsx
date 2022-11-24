@@ -5,7 +5,7 @@ import SizeSelectorItem from "../../app/(components)/(selector)/selector-items/s
 import { BLUE, RED } from "../../utils/constants";
 
 export default {
-  title: "Product Page/Selector/Selector",
+  title: "Product Page/Selector",
   component: Selector,
   argTypes: { onSelect: { action: "selected" } },
 } as ComponentMeta<typeof Selector>;

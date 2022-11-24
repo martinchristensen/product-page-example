@@ -16,7 +16,7 @@ const ColorSelectorItem = (props: Props) => {
   const { color, value, selected = false } = props;
   return (
     <>
-      <a data-tip data-for={"ColorSelectorItem-" + color}>
+      <a data-tip data-for={"ColorSelectorItem-" + color} className={styles.anchor}>
         <div
           className={`${styles.colorItem} ${
             selected ? styles.selectedColorItem : ""

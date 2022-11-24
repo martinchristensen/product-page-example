@@ -15,7 +15,7 @@ const SizeSelectorItem = (props: Props) => {
   const { size, value, selected = false } = props;
   return (
     <>
-      <a>
+      <a className={styles.anchor}>
         <div
           className={`${styles.sizeItem} ${
             selected ? styles.selectedSizeItem : ""

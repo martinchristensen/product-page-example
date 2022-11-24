@@ -43,6 +43,6 @@
     color: white;
 }
 
-a:hover { 
+.anchor:hover { 
     cursor: pointer;
 }
