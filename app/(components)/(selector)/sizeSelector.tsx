@@ -11,18 +11,18 @@ const SizeSelector = () => {
     const sizes = [
         {
             id: 1,
-            value: "40",
-            element: <SizeSelectorItem size="39" value="39" />,
+            value: "S",
+            element: <SizeSelectorItem size="S" value="S" />,
           },
           {
             id: 2,
-            value: "45",
-            element: <SizeSelectorItem size="40" value="40" />,
+            value: "M",
+            element: <SizeSelectorItem size="M" value="M" />,
           },
           {
             id: 3,
-            value: "46",
-            element: <SizeSelectorItem size="41" value="41" />,
+            value: "L",
+            element: <SizeSelectorItem size="L" value="L" />,
           },
     ]
 

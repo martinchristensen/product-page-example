@@ -4,4 +4,4 @@ export interface selectableItem {
     element: JSX.Element;
   }
 
-  export type selectableColors = '#DF3434'|'#8B2424'|'#35DEE4'|'#0827F5'
+  export type selectableColors = '#8B2424'|'#35DEE4'|'#1199F4'|'#B4171C'

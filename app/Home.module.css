@@ -1,8 +1,14 @@
+.mainWrapper {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(235, 235, 235);
+}
+
 .twoColWrapper {
-  width: 100%;
+  width: 80%;
+  max-width: 1500px;
   height: 100%;
   display: flex;
-  background-color: rgb(235, 235, 235);
 }
 
 .twoColWrapper section:nth-child(1) {
@@ -11,7 +17,7 @@
 }
 
 .twoColWrapper section:nth-child(2) {
-  width: 35%;
+  width: 40%;
   padding: 3em 5em;
 }
 
@@ -23,7 +29,7 @@
 }
 
 .detailsWrapper {
-  width: 70%;
+  width: 75%;
 }
 
 .reviewContainer {
@@ -41,8 +47,56 @@
 
 .twoColWrapper h1 {
     padding: 10px 0;
+    font-size: 3em;
 }
 
 .twoColWrapper h2 {
     padding: 10px 0;
+    font-size: 1em;
+}
+
+@media (max-width: 1440px) {
+  .detailsWrapper {
+    width: 90%;
+  }
+
+  .twoColWrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .detailsWrapper {
+    width: 100%;
+  }
+  .twoColWrapper h1 {
+    font-size: 2em;
+  }
+
+  .twoColWrapper section:nth-child(1) {
+    width: 70%;
+  }
+
+  .detailsWrapper h3  {
+    font-size: 11px;
+    padding-right: 0.5em;
+  }
+  
+  .twoColWrapper section:nth-child(2) {
+    width: 30%;
+    padding: 3em 1em;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .twoColWrapper {
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .twoColWrapper section:nth-child(2) {
+    width: 65%;
+  }
 }

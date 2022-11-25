@@ -45,9 +45,6 @@ const Slider = ({ slides, className, ...rest }: Props) => {
   return (
     <div className={`${styles.sliderContainer} ${className}`} {...rest}>
       <div className={styles.imageContainer}>
-        {/* {slides.map((slide, index) => {
-          return <div key={index}>{cloneElement(slide)}</div>;
-        })} */}
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
             key={activeSlide}
