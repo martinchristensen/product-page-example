@@ -10,7 +10,7 @@ const stars = 2.0;
 const reviews = 12;
 
 const inter = Inter({ subsets: ['latin'] })
-const lato = Lato({weight: '700'})
+const lato = Lato({weight: '700', subsets: ['latin']})
 
 const HomePage = () => {
   return (
