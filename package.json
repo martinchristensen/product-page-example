@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=cd4d0f397933"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
@@ -39,7 +40,10 @@
     "@storybook/react": "^6.5.13",
     "@storybook/testing-library": "^0.0.13",
     "babel-loader": "^8.3.0",
+    "chromatic": "^6.11.4",
     "concurrently": "^7.6.0",
     "eslint-plugin-storybook": "^0.6.7"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "product-page-example@0.1.0"
 }

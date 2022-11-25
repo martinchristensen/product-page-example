@@ -17,7 +17,12 @@ const Topbar = () => {
           >
             <PrimaryButton text="Repository" />
           </a>
-          <PrimaryButton text="Docs" />
+          <a
+            href="https://63808458254a24600e53e807-sqsahgaqdm.chromatic.com/?path=/story/example-introduction--page"
+            target="_blank"
+          >
+            <PrimaryButton text="Docs" />
+          </a>
         </div>
       </div>
     </header>
