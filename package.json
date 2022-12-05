@@ -8,9 +8,9 @@
     "export": "next export",
     "start": "next start",
     "lint": "next lint",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "deploy-storybook": "storybook-to-ghpages"
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public",
+    "build-static-webapp": "expo build:web"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
