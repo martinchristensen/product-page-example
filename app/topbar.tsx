@@ -18,7 +18,7 @@ const Topbar = () => {
             <PrimaryButton text="Repository" />
           </a>
           <a
-            href="https://63808458254a24600e53e807-sqsahgaqdm.chromatic.com/?path=/story/example-introduction--page"
+            href="https://product-page-example-storybook.netlify.app"
             target="_blank"
           >
             <PrimaryButton text="Docs" />
