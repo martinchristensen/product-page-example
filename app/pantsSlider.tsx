@@ -2,16 +2,20 @@
 
 import Slider from "./(components)/(slider)";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import useWindowDimensions from "../hooks/useWindowDimensions";
-// import useWindowDimensions from "../hooks/useWindowDimensions";
+import { ProductDetailsContext } from "./productDetailsContext";
 
-// const sliderHeight =  750;
-// const sliderHeight = width < 768 ? 200 : 750;
+const colorToIndex = (color?: string) => {
+  if (color === "red") return 1;
+  if (color === "blue") return 0;
+  return undefined;
+};
 
 const PantsSlider = () => {
   const {width} = useWindowDimensions()
   const [sliderHeight, setSliderHeight] = useState<number>(width < 768 ? 350 : 750)
+  const ProductDetails = useContext(ProductDetailsContext)
 
   useEffect(() => {
     setSliderHeight(width < 768 ? 350 : 750)
@@ -26,6 +30,7 @@ const PantsSlider = () => {
     <Slider
       style={{ height: sliderHeight }}
       slides={images}
+      goToSlide={colorToIndex(ProductDetails?.color)}
     />
   );
 };

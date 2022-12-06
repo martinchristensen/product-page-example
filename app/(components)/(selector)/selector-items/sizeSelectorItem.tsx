@@ -1,18 +1,15 @@
 "use-client";
-
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ReactTooltip from "react-tooltip";
+import { selectableSizes } from "../../../../types";
 import styles from "./selector-item.module.css";
 
 interface Props {
-    size: "35"|"36"|"37"|"38"|"39"|"40"|"41"|"42"|"43"|"44"|"45"|"S"|"M"|"L";
+    size: selectableSizes
     value: string;
     selected?: boolean;
   }
 
 const SizeSelectorItem = (props: Props) => {
-  const { size, value, selected = false } = props;
+  const { value, selected = false } = props;
   return (
     <>
       <a className={styles.anchor}>
