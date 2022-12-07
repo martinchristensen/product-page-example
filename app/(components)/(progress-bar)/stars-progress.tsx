@@ -10,6 +10,7 @@ interface Props {
   starColor?: string;
   length?: number;
   backgroundColor?: string;
+  id?: string;
 }
 
 const StarsProgress = (props: Props) => {
@@ -18,13 +19,14 @@ const StarsProgress = (props: Props) => {
     starColor = "#E6B91E",
     backgroundColor = "white",
     length = 5,
+    id = 'StarsFromReview'
   } = props;
 
   const progress = (stars / length) * 100;
 
   return (
     <>
-      <a data-tip data-for={"StarsFromReview"}>
+      <a data-tip data-for={id}>
         <ProgressBar
           progress={progress}
           length={length}
@@ -33,7 +35,7 @@ const StarsProgress = (props: Props) => {
           progressIcon={<FontAwesomeIcon icon={faStar} />}
         />
       </a>
-      <ReactTooltip id="StarsFromReview">{Math.round(stars * 100) / 100} stars</ReactTooltip>
+      <ReactTooltip id={id}>{Math.round(stars * 100) / 100} stars</ReactTooltip>
     </>
   );
 };

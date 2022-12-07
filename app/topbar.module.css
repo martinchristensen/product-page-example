@@ -1,6 +1,7 @@
 .wrapper {
   width: 100%;
   display: flex;
+  position: relative;
   justify-content: center;
   box-shadow: -1px 5px 29px 4px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: -1px 5px 29px 4px rgba(0, 0, 0, 0.4);

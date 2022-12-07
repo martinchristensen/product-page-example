@@ -1,6 +1,7 @@
 "use client";
 
 import { Inter, Lato } from "@next/font/google";
+import Link from "next/link";
 import { useState } from "react";
 import StarsProgress from "./(components)/(progress-bar)/stars-progress";
 import ColorSelector from "./(components)/(selector)/colorSelector";
@@ -28,7 +29,7 @@ const GenericPants = () => {
         <div className={styles.reviewContainer}>
           <StarsProgress stars={stars} backgroundColor={"rgb(235, 235, 235)"} />
           <span>
-            <a href="#">{reviews} reviews</a>
+            <Link href="/reviews">{reviews} reviews</Link>
           </span>
         </div>
         <div className={styles.detailsWrapper}>
