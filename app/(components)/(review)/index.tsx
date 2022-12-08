@@ -12,7 +12,8 @@ interface Props {
   title: string;
   helpful?: number;
   dateString: string;
-  key?: Key;
+  reviewId?: string;
+  backgroundColor?: string;
   onHelpful?: () => void;
 }
 
@@ -23,8 +24,9 @@ const Review = ({
   title,
   helpful = 0,
   dateString,
-  key = "key",
+  reviewId="id",
   onHelpful,
+  backgroundColor
 }: Props) => {
   return (
     <div className={styles.container}>
@@ -38,7 +40,7 @@ const Review = ({
         </div>
       </div>
       <div className={styles.titleContainer}>
-        <StarsProgress stars={stars} id={`review-stars-${key.toString()}`} />
+        <StarsProgress stars={stars} id={`review-stars-${reviewId}`} backgroundColor={backgroundColor} />
         <h6 className={styles.title}>{title}</h6>
       </div>
       <div className={styles.reviewContiner}>
