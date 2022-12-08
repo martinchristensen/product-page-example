@@ -37,3 +37,7 @@ next-env.d.ts
 
 #Pocketbase
 /pb_data
+
+#Docker
+Dockerfile
+fly.toml
