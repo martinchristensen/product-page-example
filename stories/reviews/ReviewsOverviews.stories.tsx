@@ -1,8 +1,8 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import ReviewsOverview from "../../app/(components)/(review-overview)";
+import ReviewsOverview from "../../app/(components)/(reviews-overview)";
 
 export default {
-    title: "Product Page/Reviews Overview",
+    title: "Product Page/Reviews/Reviews Overview",
     component: ReviewsOverview,
 } as ComponentMeta<typeof ReviewsOverview>;
 
