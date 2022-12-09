@@ -1,0 +1,32 @@
+.dialogWrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.dialogBox {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+  border-radius: 10px;
+  box-shadow: 10px 10px 68px 0px rgba(0, 0, 0, 0.50);
+  -webkit-box-shadow: 10px 10px 68px 0px rgba(0, 0, 0, 0.50);
+  -moz-box-shadow: 10px 10px 68px 0px rgba(0, 0, 0, 0.50);
+}
+
+.dialogBackdrop {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}

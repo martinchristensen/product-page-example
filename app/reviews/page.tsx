@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Review from "../(components)/(review)";
 import ReviewsOverview from "../(components)/(reviews-overview)";
+import CreateReview from "./createReview";
 import styles from "./reviews.module.css";
 
 const getReviews = async () => {
@@ -42,6 +43,7 @@ const ReviewsPage = async () => {
           fourStars={fourStar.totalItems}
           fiveStars={fiveStar.totalItems}
         />
+        <CreateReview />
       </div>
       <div className={styles.rightContent}>
         {reviews?.map((review) => {
