@@ -70,3 +70,10 @@
 .formWrapper {
   padding: 20px 15px 30px 15px;
 }
+
+.sortContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 15px;
+}

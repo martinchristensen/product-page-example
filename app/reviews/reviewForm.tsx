@@ -16,21 +16,7 @@ const ReviewForm = ({onSubmit}: Props) => {
   const [review, setReview] = useState<string>();
   const [stars, setStars] = useState<number>();
 
-  const create = async() => {
-    await fetch(`${process.env.NEXT_PUBLIC_PB_URL}/collections/reviews/records`, 
-    {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({
-        'title': title,
-        'author': name,
-        'description': review,
-        'stars': stars
-      })
-    })
-  }
-
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     const body = JSON.stringify({
       'title': title,
       'author': name,

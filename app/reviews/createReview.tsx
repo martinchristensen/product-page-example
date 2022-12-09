@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import PrimaryButton from "../(components)/(buttons)/PrimaryButton";
 import DialogBox from "../(components)/(dialog)";
@@ -9,6 +10,8 @@ import styles from "./reviews.module.css";
 const CreateReview = () => {
   const [dialogOpen, setDialogOpen] = useState(false);
 
+  const router = useRouter()
+
   const create = async(body?: BodyInit | null) => {
     await fetch(`${process.env.NEXT_PUBLIC_PB_URL}/collections/reviews/records`, 
     {
@@ -16,7 +19,8 @@ const CreateReview = () => {
       headers: {'Content-Type': 'application/json'},
       body: body
     })
-    setDialogOpen(false)
+    setDialogOpen(false) 
+    router.refresh()
   }
 
   return (

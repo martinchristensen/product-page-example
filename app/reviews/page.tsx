@@ -3,15 +3,9 @@ import Review from "../(components)/(review)";
 import ReviewsOverview from "../(components)/(reviews-overview)";
 import CreateReview from "./createReview";
 import styles from "./reviews.module.css";
+import ReviewsList from "./reviewsList";
 
-const getReviews = async () => {
-  const res = await fetch(
-    `${process.env.NEXT_PUBLIC_PB_URL}/collections/reviews/records?perPage=30`,
-    { cache: "no-store" }
-  );
-  const data = await res.json();
-  return data?.items as any[];
-};
+
 
 const getFilteredReviewsByStars = async (stars: number) => {
   const res = await fetch(
@@ -23,7 +17,6 @@ const getFilteredReviewsByStars = async (stars: number) => {
 };
 
 const ReviewsPage = async () => {
-  const reviews = await getReviews();
   const oneStar = await getFilteredReviewsByStars(1)
   const twoStars = await getFilteredReviewsByStars(2)
   const threeStar = await getFilteredReviewsByStars(3)
@@ -45,22 +38,7 @@ const ReviewsPage = async () => {
         <CreateReview />
       </div>
       <div className={styles.rightContent}>
-        {reviews?.map((review) => {
-          const createdDate = new Date(review.created);
-          return (
-            <Review
-              author={review.author}
-              dateString={createdDate.toLocaleDateString()}
-              review={review.description}
-              stars={review.stars}
-              title={review.title}
-              helpful={review.helpful}
-              reviewId={review.id}
-              key={review.id}
-              backgroundColor={`rgb(235, 235, 235)`}
-            />
-          );
-        })}
+        <ReviewsList />
       </div>
     </main>
   );
