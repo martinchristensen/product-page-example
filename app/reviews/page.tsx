@@ -35,7 +35,6 @@ const ReviewsPage = async () => {
       <div className={styles.leftContent}>
         <Link href={`../`}>Go back</Link>
         <br />
-        <p>This page is a work in progress...</p>
         <ReviewsOverview
           oneStars={oneStar.totalItems}
           twoStars={twoStars.totalItems}

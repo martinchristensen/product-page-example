@@ -18,3 +18,55 @@
     flex-direction: column;
     padding: 50px 0 0 20px;
 }
+
+.formTitle {
+  margin: 0;
+  font-weight: bold;
+  font-size: 17px;
+  padding-bottom: 10px;
+}
+
+.required {
+  color: rgb(214, 20, 20);
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+  gap: 3px;
+}
+
+.inputContainer > input {
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.inputContainer > textarea {
+  padding: 4px;
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.star {
+  color: #B5B5B5;
+}
+
+.star:hover {
+  color: #E6B91E;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.formButtonContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.formWrapper {
+  padding: 20px 15px 30px 15px;
+}
