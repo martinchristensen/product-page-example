@@ -22,8 +22,8 @@ const PantsSlider = () => {
   },[width])
 
   const images = [
-    <Image src={"/pants-blue.jpg"} width={sliderHeight*0.75} height={sliderHeight} alt="" />,
-    <Image src={"/pants-red.jpg"} width={sliderHeight*0.67} height={sliderHeight} alt="" />,
+    <Image placeholder="blur" src={"/pants-blue.jpg"} width={sliderHeight*0.75} height={sliderHeight} alt="" />,
+    <Image placeholder="blur" src={"/pants-red.jpg"} width={sliderHeight*0.67} height={sliderHeight} alt="" />,
   ];
 
   return (
